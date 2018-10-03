@@ -15,6 +15,11 @@ ul {
     padding: 0;
 }
 
+img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
 // header start
 
 .wrapper {
@@ -48,6 +53,8 @@ ul {
         .logo {
             margin-left: 8px;
             z-index: 99;
+            font-size: 0;
+            margin: 0;
         }
     
         .nav-list {
@@ -179,6 +186,9 @@ ul {
 
         .card-item {
             max-width: 310px;
+            &:hover {
+                box-shadow: 0 10px 16px rgba(222, 222, 222, .75);  
+            }
 
             & + .card-item {
                 margin-left: 100px;
